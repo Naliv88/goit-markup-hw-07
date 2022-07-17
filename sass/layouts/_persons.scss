@@ -1,14 +1,16 @@
 /* Persons */
 .persons {
+
+    @extend %section;
+
     background-color: var(--color-bg-second);
     line-height: 1.19;
     --items: 4;
 
 
     &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
+        @include fonts(700, 36px, 1.17, null);
+
         text-align: center;
 
         color: var(--color-title);

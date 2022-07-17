@@ -1,6 +1,7 @@
 .checkbox {
     gap: 5px;
     margin-top: 20px;
+    text-align: center;
 
     &__chek {
         line-height: 1.71;
@@ -15,9 +16,7 @@
         width: 16px;
         height: 15px;
 
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(inline-flex);
 
         background-color: var(--color-bg-first);
         border: var(--color-title) solid 2px;

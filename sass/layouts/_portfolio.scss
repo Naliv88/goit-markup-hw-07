@@ -1,17 +1,20 @@
 /* Portfolio */
 
 .portfolio {
+
+    @extend %section;
+
     padding: 95px 0;
 
     /* button filter */
 
     &__filter {
         width: 611px;
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between, center);
+
         margin-left: auto;
         margin-right: auto;
-        align-items: center;
+       
         margin-bottom: 50px;
     }
 
@@ -22,9 +25,7 @@
         border-radius: 4px;
         padding: 6px 22px;
 
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.62;
+        @include fonts(500, 16px, 1.62, null);
 
         border: none;
 
@@ -52,10 +53,7 @@
     }
 
     &__description-title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+        @include fonts(700, 18px, 2, 0.06em);
 
         color: var(--color-title);
     }

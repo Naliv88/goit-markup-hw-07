@@ -23,11 +23,9 @@
     }
 }
 
-
 /* Navigation */
 .nav {
     display: flex;
-
 
     &__list {
         display: flex;
@@ -44,10 +42,7 @@
     }
 
     &__link {
-        font-weight: 500;
-
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+        @include fonts(500, null, 1.14, 0.02em);
 
         color: var(--color-title);
 
@@ -66,9 +61,7 @@
 
         .current.nav__link::after {
             content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
+            @include position(absolute, bottom, 0, left, 0);
 
             transform: translateY(9px);
 
