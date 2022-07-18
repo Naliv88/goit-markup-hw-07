@@ -26,15 +26,15 @@
         <nav class="nav">
           <!-- Logo header -->
           <a href="./index.html" class="link logo header__logo" lang="en"
-            >Web<span class="header__logo--color">Studio</span></a
+            >Web<span class="logo__studio logo__studio--color">Studio</span></a
           >
           <!-- navigation link -->
           <ul class="list nav__list">
             <li class="nav__item">
-              <a class="link nav__link" href="./index.html">Студия</a>
+              <a class="link current nav__link" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="link current nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="link nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="link nav__link" href="#" data-modal-openn>Контакты</a>
@@ -42,10 +42,10 @@
           </ul>
           <!-- contact header -->
         </nav>
-        <ul class="list contact header__contact--align">
+        <ul class="list contact header__contact header__contact--align">
           <li class="contact__item">
             <a
-              class="link contact__link header__contact--padding contact__mail"
+              class="link contact__link header__contact header__contact--padding contact__mail"
               href="malito:info@devstudio.com"
               ><svg class="contact__icon contact__mail-icon" width="16" height="12">
                 <use href="./image/icons.svg#icon-mail"></use>
@@ -55,7 +55,7 @@
           </li>
           <li class="contact__item">
             <a
-              class="link contact__link header__contact--padding contact__phone"
+              class="link contact__link header__contact header__contact--padding contact__phone"
               href="tel:+380961111111"
               ><svg class="contact__icon contact__phone-icon" width="10" height="16">
                 <use href="./image/icons.svg#icon-phone"></use>
@@ -273,7 +273,9 @@
       <div class="container footer__contacts">
         <div>
           <!-- logo footer -->
-          <a href="./" class="link logo">Web<span class="footer__logo--color">Studio</span></a>
+          <a href="./" class="link logo"
+            >Web<span class="logo__footer logo__footer--color">Studio</span></a
+          >
           <!-- contacts footer -->
           <address class="">
             <ul class="list contact footer__contact">
@@ -283,9 +285,7 @@
                 /></span>
               </li>
               <li class="contact__item">
-                <a
-                  class="link contact__link footer__contact--margin"
-                  href="malito:info@devstudio.com"
+                <a class="link contact__link contact__link--margin" href="malito:info@devstudio.com"
                   >info@devstudio.com </a
                 ><br />
               </li>
@@ -301,7 +301,7 @@
           <ul class="social list">
             <li class="social__item">
               <a
-                class="social__link social__footer--color link"
+                class="social__link social__link-footer social__link-footer--color link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -314,7 +314,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link social__footer--color link"
+                class="social__link social__link-footer social__link-footer--color link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -327,7 +327,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link social__footer--color link"
+                class="social__link social__link-footer social__link-footer--color link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -340,7 +340,7 @@
             </li>
             <li class="social__item">
               <a
-                class="social__link social__footer--color link"
+                class="social__link social__link-footer social__link-footer--color link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -355,11 +355,11 @@
         </div>
         <div class="footer__subscribe">
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
-          <form class="subscrib">
+          <form class="subscribe">
             <label class="subscribe__label">
               <input class="subscribe__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="btn btn__margin--left" type="submit">
+            <button class="btn btn--margin-left" type="submit">
               Подписаться
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./image/icons.svg#icon-send"></use>
