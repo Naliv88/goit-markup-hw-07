@@ -3,9 +3,7 @@
     background-color: var(--color-bg-hero);
     padding: 60px 0;
 
-    &__logo--color {
-        color: var(--color-bg-first);
-    }
+
 
     &__contact {
         margin-top: 20px;
@@ -36,6 +34,9 @@
     &__subscribe {
         margin-top: 8px;
     }
+}
+.logo__footer--color {
+    color: var(--color-bg-first);
 }
 .subscribe{
 

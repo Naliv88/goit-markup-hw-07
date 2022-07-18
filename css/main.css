@@ -103,14 +103,14 @@ p {
   background-color: #188CE8;
   cursor: pointer;
 }
-.btn__margin--center {
+.btn--margin-center {
   margin-left: auto;
   margin-right: auto;
 }
-.btn__margin--left {
+.btn--margin-left {
   margin-left: 12px;
 }
-.btn__margin--top {
+.btn--margin-top {
   margin-top: 30px;
 }
 
@@ -137,6 +137,9 @@ p {
   opacity: 0.7;
   cursor: pointer;
 }
+.logo__studio--color {
+  color: #000;
+}
 
 .social {
   display: -webkit-box;
@@ -151,10 +154,6 @@ p {
 }
 .social__item:not(:last-child) {
   margin-right: 10px;
-}
-.social__persons--color {
-  background-color: var(--color-bg-first);
-  fill: #AFB1B8;
 }
 .social__link {
   display: -webkit-box;
@@ -172,6 +171,10 @@ p {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social__link--color {
+  background-color: var(--color-bg-first);
+  fill: #AFB1B8;
+}
 .social__link:hover, .social__link:focus {
   background-color: var(--color-accent);
   color: #ffffff;
@@ -179,7 +182,7 @@ p {
 .social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: var(--color-bg-first);
 }
-.social__footer--color {
+.social__link-footer--color {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--color-bg-first);
 }
@@ -206,6 +209,9 @@ p {
 .contact__link:hover, .contact__link:focus {
   color: var(--color-accent);
   cursor: pointer;
+}
+.contact__link--margin {
+  margin-top: 18px;
 }
 .contact__mail {
   margin-right: 50px;
@@ -403,9 +409,6 @@ p {
 }
 .header__logo {
   padding: 32px 0;
-}
-.header__logo--color {
-  color: #000;
 }
 .header__contact--align {
   -webkit-box-align: center;
@@ -671,9 +674,6 @@ p {
   background-color: var(--color-bg-hero);
   padding: 60px 0;
 }
-.footer__logo--color {
-  color: var(--color-bg-first);
-}
 .footer__contact {
   margin-top: 20px;
   -webkit-box-orient: vertical;
@@ -708,6 +708,10 @@ p {
 }
 .footer__subscribe {
   margin-top: 8px;
+}
+
+.logo__footer--color {
+  color: var(--color-bg-first);
 }
 
 .subscribe__input {
